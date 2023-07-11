@@ -2,6 +2,7 @@
 * {
   font-family: "Lato", sans-serif;
   font-family: "League Spartan", sans-serif;
+  font-family: Lato;
   margin: 0;
 }
 .btn {
@@ -28,21 +29,77 @@ header img {
 }
 .textintro {
   width: 60%;
+  margin: 70px;
 }
+.textintro h3 {
+  font-size: 80px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: Lato;
+}
+.textintro p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 15px;
+  color: rgba(39, 39, 39, 0.6);
+}
+.textintro button {
+  display: inline-flex;
+  padding: 20px 43px;
+  align-items: flex-start;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+
 /* featured Part Style */
 .textOfFeatered {
+  margin-top: 100px;
+}
+.textOfFeatered h3 {
+  text-align: center;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.textOfFeatered p {
+  color: rgba(39, 39, 39, 0.6);
+  text-align: center;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 30px;
 }
 .container {
   display: flex;
   flex-direction: space-between;
 }
-.box1 .box2 .box3 {
-  width: 25%;
+.container img {
   height: 400px;
+  width: 400px;
+}
+.box1,
+.box2,
+.box3 {
+  width: 25%;
+  height: 450px;
+  margin-right: 25px;
+  position: relative;
 }
 .box1 {
   border-radius: 300px 300px 0px 0px;
   background: rgba(167, 33, 98, 0.15);
+  margin-left: 10%;
 }
 .box2 {
   border-radius: 300px 300px 0px 0px;
@@ -52,48 +109,134 @@ header img {
   border-radius: 300px 300px 0px 0px;
   background: rgba(71, 125, 17, 0.15);
 }
-
+.box2 img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 90%;
+}
+.box3 img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.underLineText {
+  color: #272727;
+  text-align: center;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+  text-decoration-line: underline;
+}
+.space {
+  margin-right: 16%;
+}
 /* Promotion */
 .containerofPromo {
   display: flex;
   flex-direction: space-between;
   width: 80%;
-  height: 300px;
+  height: 250px;
   border-radius: 8px;
   background: rgba(39, 39, 39, 0.05);
-  margin: 20px 10%;
+  margin: 80px 10%;
   align-items: center;
 }
 .box {
-  margin: 40px 20px;
+  margin: auto;
   padding: 20px;
   align-items: center;
 }
+.box img {
+  margin: 20px;
+}
+
 /* Deal Style */
 .deal {
   border-radius: 8px;
   background: rgba(229, 84, 115, 0.05);
   display: flex;
 }
+.deal span {
+  color: #e55473;
+  font-weight: 800;
+  font-family: Lato;
+  font-size: 40px;
+}
+.dealtext {
+  margin: auto;
+}
+.dealtext h3 {
+  color: #272727;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.dealtext p {
+  color: rgba(39, 39, 39, 0.6);
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.dealtext button {
+  color: #fff;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 15px 35px;
+  margin-left: 35%;
+}
 
 /* insta Style */
+.instaText {
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+.instaText h3 {
+  color: #272727;
+  text-align: center;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 10px;
+}
+.instaText p {
+  color: rgba(39, 39, 39, 0.6);
+  text-align: center;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
 .insta {
   display: flex;
-  margin-left: 100px;
+  margin-left: 120px;
   margin-right: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.insta-box {
+  padding: 20px;
+}
 .insta-box img {
-  height: 280px;
+  height: 300px;
   width: 280px;
 }
-.insta-box {
-  width: 100px;
-  height: 10px;
-  margin-right: 20px;
-}
-
 /* Offer Part Design */
 .offer {
   display: flex;
@@ -102,35 +245,70 @@ header img {
   background-image: url("/images/Rectangle 9.png");
   width: 80%;
   height: 400px;
-  margin: 30px 160px;
-}
-.content {
+  margin: 30px auto;
   text-align: center;
+}
+.offer h3 {
+  color: #272727;
+  text-align: center;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding: 10px;
+}
+.offer p {
+  color: rgba(39, 39, 39, 0.6);
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 10px;
+}
+.offer form input {
+  width: 70%;
+  height: 40px;
+}
+.offer form button {
+  color: #fff;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px 20px;
 }
 
 /* Footer Style */
 footer {
   background-color: #111010;
   width: 100%;
-  height: 449px;
+  height: 420px;
   color: #ffffff;
   font-style: normal;
   line-height: normal;
   text-align: center;
+  margin: auto;
 }
 footer h3 {
   font-size: 48px;
   font-weight: 800;
+  margin-bottom: 20px;
 }
 footer h3 span {
   color: #e55473;
 }
 footer p {
+  margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.9);
+  line-height: 20px;
 }
 .footclass {
-  display: grid;
-  place-items: center;
+  padding: 120px;
+  margin: auto;
 }
 .copywrite {
   color: rgba(255, 255, 255, 0.4);
