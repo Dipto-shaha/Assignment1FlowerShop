@@ -240,7 +240,7 @@ header img {
 /* Offer Part Design */
 .offer {
   align-items: center;
-  background-image: url("/images/Rectangle9.png");
+  background-image: url("bg.png");
   width: 80%;
   height: 400px;
   margin: 30px auto;
