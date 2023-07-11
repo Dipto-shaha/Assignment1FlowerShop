@@ -239,14 +239,15 @@ header img {
 }
 /* Offer Part Design */
 .offer {
-  display: flex;
-  justify-content: center;
   align-items: center;
   background-image: url("/images/Rectangle 9.png");
   width: 80%;
   height: 400px;
   margin: 30px auto;
+}
+.content {
   text-align: center;
+  padding-top: 70px;
 }
 .offer h3 {
   color: #272727;
@@ -256,7 +257,8 @@ header img {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 0px;
 }
 .offer p {
   color: rgba(39, 39, 39, 0.6);
@@ -268,9 +270,18 @@ header img {
   line-height: 30px;
   padding: 10px;
 }
+.formcontin {
+  /* padding-left: 150px; */
+  text-align: center;
+
+  padding-top: 5px;
+}
 .offer form input {
-  width: 70%;
-  height: 40px;
+  width: 40%;
+  height: 43px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid transparent;
 }
 .offer form button {
   color: #fff;
